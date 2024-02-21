@@ -3,10 +3,10 @@
     <div class="p-table-responsive">
         <p-toolbar styleClass="mb-4 ">
             <ng-template pTemplate="left">
-                <button pButton pRipple label="Novo" icon="pi pi-plus" class="p-button-success mr-2" (click)="createRecord()"></button>
-                <button pButton pRipple icon="pi pi-download" class=" mr-2" label="Preuzmi podatke" (click)="downloadData()">
-                </button>
-                <button pButton pRipple icon="pi pi-undo" label="Očisti filtere" (click)="clearFilters()"></button>
+                <p-button size="small" label="Novo" icon="pi pi-plus" styleClass="p-button-success" class="mr-2" (click)="createRecord()"></p-button>
+                <p-button size="small" icon="pi pi-download" class=" mr-2" label="Preuzmi podatke" (click)="downloadData()">
+                </p-button>
+                <p-button size="small" icon="pi pi-undo" label="Očisti filtere" (click)="clearFilters()"></p-button>
             </ng-template>
         </p-toolbar>
         <p-toolbar styleClass="mb-4">
@@ -21,7 +21,7 @@
                 </span>
             </ng-template>
             <ng-template pTemplate="right">
-                <button pButton pRipple icon="pi pi-search" label="Pretrazi" (click)="search()"></button>
+                <p-button size="small"  icon="pi pi-search" label="Pretrazi" (click)="search()"></p-button>
             </ng-template>
         </p-toolbar>
         <p-table
