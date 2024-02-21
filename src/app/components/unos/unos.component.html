@@ -1,0 +1,72 @@
+<form [formGroup]="entityForm">
+  <div style="margin-top:20px; margin-bottom: 7px;">
+    <span class="p-float-label">
+      <input type="text" pInputText id="dnevniIzvestaj" formControlName="rb"/>
+      <label for="dnevniIzvestaj">Dnevni izveštaj</label>
+    </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+    <span class="p-float-label">
+      <input type="text" pInputText id="korisnikUsluge" formControlName="korisnikUsluge"/>
+      <label for="korisnikUsluge">Korisnik usluge</label>
+    </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <input type="text" pInputText id="mestoRada" formControlName="mestoRada"/>
+    <label for="mestoRada">Mesto rada</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <input type="text" pInputText id="rukovaoc" formControlName="rukovaoc"/>
+    <label for="rukovaoc">Rukovaoc</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <p-calendar [showIcon]="true" [timeOnly]="true" id="radnoVremeOd" formControlName="radnoVremeOd"></p-calendar>
+    <label for="radnoVremeOd">Radno vreme od</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <p-calendar [showIcon]="true" [timeOnly]="true" formControlName="radnoVremeDo"></p-calendar>
+    <label for="radnoVremeDo">Radno vreme do</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <p-calendar  [showIcon]="true" id="datum" formControlName="datum" dateFormat="dd.mm.yy"></p-calendar>
+    <label for="datum">Datum</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <input pInputText id="vrstaMasine " formControlName="vrstaMasine"/>
+    <label for="vrstaMasine">Vrsta masine</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <input pInputText id="motocasovnik" formControlName="sifra"/>
+    <label for="sifra">Sifra</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+  <span class="p-float-label">
+    <input pInputText id="motocasovnik" formControlName="stanjeMotocasovnikaOd"/>
+    <label for="motocasovnik">Stanje motocasovnika od:</label>
+  </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+    <span class="p-float-label">
+      <input pInputText id="motocasovnik" formControlName="stanjeMotocasovnikaDo"/>
+      <label for="motocasovnik">Stanje motocasovnika do:</label>
+    </span>
+  </div>
+  <div style="margin-top:20px; margin-bottom: 7px;">
+    <button type="button" pButton icon="pi pi-save" label="Sačuvaj" style="margin: auto;" (click)="save()"></button>
+</div>
+</form>
+<p-toast></p-toast>
